@@ -21,25 +21,10 @@
       rel="stylesheet"
     />
   </head>
-  <nav>
-    <!--============================================== Navigation====================================================== -->
-
-    <div class="container-navbar">
-      <nav class="navbar-heading">
-        <h1>
-          <a class="navbar-admin-link" href="adminDashboard.php"
-            ><span class="nav-span">CodingHour</span> ADMIN AREA</a
-          >
-        </h1>
-      </nav>
-    </div>
-    <!--============================================== Navigation====================================================== -->
-
+  <body>
     <!--============================================== SideBar====================================================== -->
-
-    <div class="sidebar-container">
-      <div class="sidebar">
-        
+    <div class="container">
+      <nav>
         <ul>
           <li>
             <a href="#" class="logo">
@@ -47,98 +32,173 @@
               <span class="sidebar-head">Admin</span></a
             >
           </li>
-          <div class="sidebar-menu">
-            <li>
-              <a href="/" class="link-active">
-                <i class="fas fa-tachometer-alt"></i>
-                <span class="sidebar-item">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-accessible-icon"></i>
-                <span class="sidebar-item">Courses</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-accessible-icon"></i>
-                <span class="sidebar-item">Lessons</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-users"></i>
-                <span class="sidebar-item">Students</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-chart-bar"></i>
-                <span class="sidebar-item">Sell Report</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-table"></i>
-                <span class="sidebar-item">Payment</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-accessible-icon"></i>
-                <span class="sidebar-item">Feedback</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-key"></i>
-                <span class="sidebar-item">Password</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="logout">
-                <i class="fas fa-sign-out-alt"></i>
-                <span class="sidebar-item">Logout</span>
-              </a>
-            </li>
-          </div>
+          <li>
+            <a href="/" class="link-active">
+              <i class="fas fa-tachometer-alt"></i>
+              <span class="sidebar-item link-active">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-accessible-icon"></i>
+              <span class="sidebar-item">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-accessible-icon"></i>
+              <span class="sidebar-item">Lessons</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i>
+              <span class="sidebar-item">Students</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-chart-bar"></i>
+              <span class="sidebar-item">Sell Report</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-table"></i>
+              <span class="sidebar-item">Payment</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-accessible-icon"></i>
+              <span class="sidebar-item">Feedback</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-key"></i>
+              <span class="sidebar-item">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="sidebar-item">Logout</span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
+
+      <section class="main">
+        <div class="main-top">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="users">
+          <div style="background: var(--color-course1)" class="card">
+            <h3>Courses</h3>
+            <h4>5</h4>
+            <a href="#">View</a>
+          </div>
+          <div style="background: var(--color-course2)" class="card">
+            <h3>Students</h3>
+            <h4>25</h4>
+            <a href="#">View</a>
+          </div>
+          <div style="background: var(--color-course3)" class="card">
+            <h3>Sold</h3>
+            <h4>5</h4>
+            <a href="#">View</a>
+          </div>
+        </div>
+        <section class="course-ordered">
+          <div class="orderd-list">
+            <h1>Course Ordered</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Course ID</th>
+                  <th>Student Email</th>
+                  <th>Order Date</th>
+                  <th>Amount</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>22</th>
+                  <td>100</td>
+                  <td>amanadhikari@gmail.com</td>
+                  <td>20/11/2022</td>
+                  <td>2000</td>
+                  <td>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      name="delete"
+                      value="Delete"
+                    >
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>15</th>
+                  <td>101</td>
+                  <td>binaykholiya@gmail.com</td>
+                  <td>22/12/2022</td>
+                  <td>799</td>
+                  <td>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      name="delete"
+                      value="Delete"
+                    >
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>25</th>
+                  <td>69</td>
+                  <td>ishwarsinghbhandari@gmail.com</td>
+                  <td>01/01/2023</td>
+                  <td>699</td>
+                  <td>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      name="delete"
+                      value="Delete"
+                    >
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th>27</th>
+                  <td>007</td>
+                  <td>narendrajethi@gmail.com</td>
+                  <td>01/02/2023</td>
+                  <td>1499</td>
+                  <td>
+                    <button
+                      type="submit"
+                      class="btn btn-secondary"
+                      name="delete"
+                      value="Delete"
+                    >
+                      <i class="far fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
     </div>
-  
-    <!--============================================== SideBar====================================================== -->
-
-    <!--===================================================main========================================================= -->
-    <!-- <section class="main">
-      <div class="cards">
-        <div class="cards cardOne">
-          <div class="card-header">Courses</div>
-          <div class="card-body">
-            <h4 class="card-title">5</h4>
-            <a class="card-btn btn text-white" href="#">View</a>
-          </div>
-        </div>
-        <div class="cards cardTwo">
-          <div class="card-header">Students</div>
-
-          <div class="card-body">
-            <h4 class="card-title">25</h4>
-            <a class="card-btn btn text-white" href="#">View</a>
-          </div>
-        </div>
-        <div class="cards cardThree">
-          <div class="card-header">Sold</div>
-          <div class="card-body">
-            <h4 class="card-title">3</h4>
-            <a class="card-btn btn text-white" href="#">View</a>
-          </div>
-        </div>
-      </div>
-    </section>
- -->
-    <!--===================================================main========================================================= -->
-
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
